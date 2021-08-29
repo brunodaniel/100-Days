@@ -1,0 +1,17 @@
+num = input("Enter a 2 digit number: ")
+print(type(num))
+print(int(num[0])+int(num[1]))
+
+
+BMI Calculator
+weight = float(input("Enter your weight in kg: "))
+height = float(input("Enter your height in m: "))
+bmi = int(weight/height**2)
+print("Your BMI is: " + str(bmi))
+
+
+Life in Weeks
+currentAge = input("What is your current age?: ")
+ageR = 90-int(currentAge)
+print(
+    f"If you live until 90, you have: {ageR} Years, {ageR*12} months, {ageR*52} Weeks and {ageR*365} days left")

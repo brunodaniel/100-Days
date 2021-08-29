@@ -1,0 +1,191 @@
+#IF/ELSE/ELIF
+print("Welcome to the rollercoaster!!!")
+height = int(input("What is your height in cm? "))
+if height >= 120:
+    print("You can ride the rollercoaster")
+else:
+    print("You can not ride the rollercoaster")
+
+###################################################
+
+print("Odd/Even verification")
+num = int(input("Enter a number to verify: "))
+if (num % 2) == 0:
+    print("This is an even number.")
+else:
+    print("This is an odd number.")
+
+####################################################
+
+#Rollercoaster 1.0
+print("Welcome to the rollercoaster!!!")
+height = int(input("What is your height in cm? "))
+if height >= 120:
+    print("You can ride the rollercoaster")
+    age = int(input("What is your age? "))
+    if age < 12:
+        print("The price is $5")
+    elif age <= 18:
+        print("The price is $7")
+    else:
+        print("The price is $12")
+else:
+    print("You can not ride the rollercoaster")
+######################################################
+
+# BMI Calculator 2.0
+weight = float(input("Enter your weight in kg: "))
+height = float(input("Enter your height in m: "))
+bmi = round(weight / height ** 2)
+print("Your BMI is: " + str(bmi))
+if bmi < 18.5:
+    print("You are UNDERWEIGHT")
+elif bmi < 25:
+    print("You have NORMAL WEIGHT")
+elif bmi < 30:
+    print("You have OVERWEIGHT")
+elif bmi < 35:
+    print("You have OBESE")
+elif bmi > 35:
+    print("You have CLINICALLY OBESE")
+
+#######################################################
+Solução 1
+# Leap Year / Ano Bissexto
+print("Leap year / Ano Bissexto")
+year = int(input("Enter the year: "))
+if year % 4 == 0 and year % 100 != 0:
+    print("Leap year!")
+if year % 4 != 0 and year % 400 == 0:
+    print("Leap year!")
+if year % 4 != 0 and year % 400 != 0:
+    print("NOT a Leap year!")
+
+Solução 2
+# Leap Year / Ano Bissexto
+print("Leap year / Ano Bissexto")
+year = int(input("Which year do you want to check? "))
+
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print("Leap year.")
+    else:
+      print("Not leap year.")
+  else:
+    print("Leap year.")
+else:
+  print("Not leap year.")
+
+##########################################################
+#Rollercoaster 2.0
+print("Welcome to the rollercoaster!!!")
+height = int(input("What is your height in cm? "))
+bill = 0
+if height >= 120:
+    print("You can ride the rollercoaster")
+    age = int(input("What is your age? "))
+    if age < 12:
+        bill = 5
+        print("The price is $5")
+    elif age <= 18:
+        bill = 7
+        print("The price is $7")
+    else:
+        bill = 12
+        print("The price is $12")
+
+    photo = input("Do you want a photo taken? Y or N ")
+    if photo == "Y":
+        bill += 3
+    print(f"The final bill is ${bill}")
+else:
+    print("You can not ride the rollercoaster")
+############################################################
+
+# Pizzaria
+print("----------------------\nSmall Pizza: $15\nMedium Pizza: $20\nLarge Pizza: $25\nPepperoni for Small \nPizza: +$2\nPepperoni for Medium or Large Pizza: +$3\nExtra cheese for any size pizza: + $1\n-------------------------")
+size = input("Chose teh pizza size: S for Small, M for Medium and L for Large ")
+add_peperoni = input("Extra Peperoni? Y or N ")
+add_cheese = input("Extra Cheese? Y or N ")
+bill = 0
+if size == 'S':
+    bill = 15
+    if add_peperoni == 'Y':
+        bill = bill + 2
+        if add_cheese == 'Y':
+            bill = bill + 1
+if size == 'M':
+    bill = 20
+    if add_peperoni == 'Y':
+        bill += 3
+        if add_cheese == 'Y':
+            bill += 1
+if size == 'L':
+    bill = 25
+    if add_peperoni == 'Y':
+        bill += 3
+        if add_cheese == 'Y':
+            bill += 1
+print(bill)
+print(f"Total Bill: ${bill}")
+############################################################
+
+# Rollercoaster 3.0
+print("Welcome to the rollercoaster!!!")
+height = int(input("What is your height in cm? "))
+bill = 0
+if height >= 120:
+    print("You can ride the rollercoaster")
+    age = int(input("What is your age? "))
+    if age < 12:
+        bill = 5
+        print("The price is $5")
+    elif age <= 18:
+        bill = 7
+        print("The price is $7")
+    elif age >= 45 and age <= 55:
+        print("The ride is free")
+    else:
+        bill = 12
+        print("The price is $12")
+
+    photo = input("Do you want a photo taken? Y or N ")
+    if photo == "Y":
+        bill += 3
+    print(f"The final bill is ${bill}")
+else:
+    print("You can not ride the rollercoaster")
+###########################################################
+
+#### Love Calculator
+
+print("Welcome to the love calculator")
+name1 = input("Enter your name: ")
+name2 = input("Enter their name: ")
+combined_name = name1 + name2
+lower_case_string = combined_name.lower()
+t = lower_case_string.count("t")
+r = lower_case_string.count("r")
+u = lower_case_string.count("u")
+e = lower_case_string.count("e")
+true = t+r+u+e
+l = lower_case_string.count("l")
+o = lower_case_string.count("o")
+v = lower_case_string.count("v")
+e = lower_case_string.count("e")
+love = l+o+v+e
+love_score = int(str(true)+str(love))
+
+if (love_score < 10) or (love_score > 90):
+    print(
+        f"Your love score is {love_score}, you go together like coke and mentos")
+elif (love_score > 40) and (love_score <= 50):
+    print(
+        f"Your love score is {love_score}, you are alright together")
+else:
+    print(
+        f"Your love score is {love_score}")
+
+##########################################################
+
