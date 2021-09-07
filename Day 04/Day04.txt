@@ -1,0 +1,16 @@
+#Day 04
+# askpython.com
+# Random
+import random
+random_int = random.randint(1, 10)
+print(random_int)
+# print(my_module.pi)
+random_float = random.random()*5
+print(random_float)
+
+#liststates_of_america = ["Texas", "New York", "California"]
+
+states_of_america.append("Alaska")
+print(states_of_america)
+
+#
