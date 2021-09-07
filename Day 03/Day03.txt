@@ -1,19 +1,7 @@
-#IF/ELSE/ELIF
-print("Welcome to the rollercoaster!!!")
-height = int(input("What is your height in cm? "))
-if height >= 120:
-    print("You can ride the rollercoaster")
-else:
-    print("You can not ride the rollercoaster")
+
 
 ###################################################
 
-print("Odd/Even verification")
-num = int(input("Enter a number to verify: "))
-if (num % 2) == 0:
-    print("This is an even number.")
-else:
-    print("This is an odd number.")
 
 ####################################################
 
@@ -50,7 +38,7 @@ elif bmi > 35:
     print("You have CLINICALLY OBESE")
 
 #######################################################
-Solução 1
+#Solução 1
 # Leap Year / Ano Bissexto
 print("Leap year / Ano Bissexto")
 year = int(input("Enter the year: "))
@@ -61,7 +49,7 @@ if year % 4 != 0 and year % 400 == 0:
 if year % 4 != 0 and year % 400 != 0:
     print("NOT a Leap year!")
 
-Solução 2
+#Solução 2
 # Leap Year / Ano Bissexto
 print("Leap year / Ano Bissexto")
 year = int(input("Which year do you want to check? "))
